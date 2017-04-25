@@ -20,9 +20,10 @@ phantom.on('close', () => {
   $tr.each((index, item) => {
     let $actualTr = $(item);
     let proxy = $actualTr.find('a').text();
-    let port = $actualTr.find('td:first-child + td').text();
+    let port = $actualTr.find('td:nth-child(2)').text();
+    let country = $actualTr.find('td:nth-child(5)').text();
     if(proxy && port)
-      console.log(`${proxy}:${port}`);
+      console.log(`${proxy}:${port} - ${country}`);
   });
 });
 
