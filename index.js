@@ -33,6 +33,7 @@ app.get('', function(req, res){
         proxies[number++] = { proxy: proxy, port: port, country: country };
     });
 
+    res.writeHead( 200, {'Content-Type': 'application/json'});
     res.end( JSON.stringify(proxies) );
   });
 });
