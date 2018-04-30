@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "cheerio": "^0.19.0",
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "system": "^2.0.1",
+    "webpage": "^0.3.0"
   }
 }
